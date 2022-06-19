@@ -10,9 +10,9 @@ import paquete5.Persona;
  * @author reroes
  */
 public class Prestamo {
-    private Persona beneficiario;
-    private int prestamoMeses;
-    private String ciudad;
+    protected Persona beneficiario;
+    protected int prestamoMeses;
+    protected String ciudad;
     
     public Prestamo(Persona bene, int meses, String ciu) {
         beneficiario = bene;

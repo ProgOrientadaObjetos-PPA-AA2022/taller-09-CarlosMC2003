@@ -16,8 +16,8 @@ public class PrestamoEducativo extends Prestamo{
     private double valorCarrera;
     private double valorMenCarre;
     
-    public PrestamoEducativo(int meses, String ciu,
-            InstiEdu centro, String nivelEst, double valorCarre) {
+    public PrestamoEducativo(InstiEdu centro, int meses, String ciu,
+            String nivelEst, double valorCarre) {
         super(meses, ciu.toUpperCase());
         centroEdu = centro;
         nivelEstudio = nivelEst;
