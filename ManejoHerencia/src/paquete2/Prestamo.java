@@ -4,11 +4,48 @@
  * and open the template in the editor.
  */
 package paquete2;
-
+import paquete5.Persona;
 /**
  *
  * @author reroes
  */
 public class Prestamo {
+    private Persona beneficiario;
+    private int prestamoMeses;
+    private String ciudad;
     
+    public Prestamo(Persona bene, int meses, String ciu) {
+        beneficiario = bene;
+        prestamoMeses = meses;
+        ciudad = ciu;
+    }
+    
+    public Prestamo(int meses, String ciu) {
+        prestamoMeses = meses;
+        ciudad = ciu;
+    }
+    
+    public void establecerBeneficiario(Persona n) {
+        beneficiario = n;
+    }
+    
+    public void establecerTiempoPrestamo(int n) {
+        prestamoMeses = n;
+    }
+    
+    public void establecerCiudad(String n) {
+        ciudad = n;
+    }
+    
+    public Persona obtenerBeneficiario() {
+        return beneficiario;
+    }
+    
+    public int obtenerTiempoPrestamo() {
+        return prestamoMeses;
+    }
+    
+    public String obtenerCiudad() {
+        return ciudad;
+    }
 }
